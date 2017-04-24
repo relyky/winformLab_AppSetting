@@ -76,12 +76,11 @@
             // 
             // textBox1
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::winformLab_AppSetting.Properties.Settings.Default, "Setting1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.textBox1.Location = new System.Drawing.Point(102, 33);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = global::winformLab_AppSetting.Properties.Settings.Default.Setting1;
+            this.textBox1.Text = "aaaa";
             // 
             // textBox3
             // 
@@ -114,6 +113,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Properties.Settings.Default.Save";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
